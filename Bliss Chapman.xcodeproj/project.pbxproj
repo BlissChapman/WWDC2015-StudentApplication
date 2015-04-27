@@ -1,0 +1,575 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A5096C9A1AE1DE380093CF1E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5096C991AE1DE380093CF1E /* AppDelegate.swift */; };
+		A5096C9C1AE1DE380093CF1E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5096C9B1AE1DE380093CF1E /* ViewController.swift */; };
+		A5096C9F1AE1DE380093CF1E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5096C9D1AE1DE380093CF1E /* Main.storyboard */; };
+		A5096CA11AE1DE380093CF1E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5096CA01AE1DE380093CF1E /* Images.xcassets */; };
+		A5096CB01AE1DE380093CF1E /* Bliss_ChapmanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5096CAF1AE1DE380093CF1E /* Bliss_ChapmanTests.swift */; };
+		A5096CBA1AE1E2500093CF1E /* PortfolioCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5096CB91AE1E2500093CF1E /* PortfolioCollectionViewController.swift */; };
+		A5096CBC1AE1E2800093CF1E /* ProjectsPage.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5096CBB1AE1E2800093CF1E /* ProjectsPage.xib */; };
+		A5096CBE1AE1E3D20093CF1E /* ProjectsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5096CBD1AE1E3D20093CF1E /* ProjectsPage.swift */; };
+		A52355ED1AE82C2600FDE379 /* Gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52355EC1AE82C2600FDE379 /* Gif.swift */; };
+		A52355F31AE84F9E00FDE379 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A52355F21AE84F9E00FDE379 /* StoreKit.framework */; };
+		A52355F51AE8816200FDE379 /* Whos Your Valentine? - CocoaNuts Demo.pdf in Resources */ = {isa = PBXBuildFile; fileRef = A52355F41AE8816200FDE379 /* Whos Your Valentine? - CocoaNuts Demo.pdf */; };
+		A52355F91AE94FCD00FDE379 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = A52355F81AE94FCD00FDE379 /* Reachability.m */; };
+		A52355FC1AE9688100FDE379 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52355FB1AE9688100FDE379 /* ProfileViewController.swift */; };
+		A52356001AE97CD000FDE379 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A52355FF1AE97CD000FDE379 /* MapKit.framework */; };
+		A52A30AD1AEBCA82008F9413 /* LifestyleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52A30AC1AEBCA82008F9413 /* LifestyleViewController.swift */; };
+		A52A30AF1AEBCC4F008F9413 /* CUBVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52A30AE1AEBCC4F008F9413 /* CUBVideo.swift */; };
+		A52A30B11AEBCCF4008F9413 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A52A30B01AEBCCF4008F9413 /* AVFoundation.framework */; };
+		A52AF6FD1AED684E00E5980A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A52AF6FC1AED684E00E5980A /* QuartzCore.framework */; };
+		A52AF6FF1AED687800E5980A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A52AF6FE1AED687800E5980A /* SystemConfiguration.framework */; };
+		A52AF7031AED6E1500E5980A /* SliderView.gif in Resources */ = {isa = PBXBuildFile; fileRef = A52AF7021AED6E1500E5980A /* SliderView.gif */; };
+		A538ADD01AE9849D001CBDAD /* EducationPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A538ADCF1AE9849D001CBDAD /* EducationPage.swift */; };
+		A54499121AEC007800519CE8 /* CUBPromoVideo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = A54499111AEC006700519CE8 /* CUBPromoVideo.mp4 */; };
+		A569C13D1AEB01D300AFB006 /* MapPopoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A569C13B1AEB01D300AFB006 /* MapPopoverViewController.swift */; };
+		A569C13E1AEB01D300AFB006 /* MapPopoverViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A569C13C1AEB01D300AFB006 /* MapPopoverViewController.xib */; };
+		A569C1421AEB1A2A00AFB006 /* EducationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A569C1411AEB1A2A00AFB006 /* EducationViewController.swift */; };
+		A58401901AEC695000072575 /* FamilyWaving.gif in Resources */ = {isa = PBXBuildFile; fileRef = A584018F1AEC695000072575 /* FamilyWaving.gif */; };
+		A5A0DDE41AE5BC2B000FE9D0 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A0DDE31AE5BC2B000FE9D0 /* Model.swift */; };
+		A5B7EEE81AEC034900A24741 /* ISYMVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B7EEE71AEC034900A24741 /* ISYMVideoViewController.swift */; };
+		A5B7EEEA1AEC095000A24741 /* MusicSample.mov in Resources */ = {isa = PBXBuildFile; fileRef = A5B7EEE91AEC095000A24741 /* MusicSample.mov */; };
+		A5B7EEEF1AEC2BA600A24741 /* ProfessionalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B7EEEE1AEC2BA600A24741 /* ProfessionalViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A5096CAA1AE1DE380093CF1E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5096C8C1AE1DE380093CF1E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5096C931AE1DE380093CF1E;
+			remoteInfo = "Bliss Chapman";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A5096C941AE1DE380093CF1E /* Bliss Chapman.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bliss Chapman.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5096C981AE1DE380093CF1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5096C991AE1DE380093CF1E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A5096C9B1AE1DE380093CF1E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A5096C9E1AE1DE380093CF1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A5096CA01AE1DE380093CF1E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A5096CA91AE1DE380093CF1E /* Bliss ChapmanTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Bliss ChapmanTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5096CAE1AE1DE380093CF1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5096CAF1AE1DE380093CF1E /* Bliss_ChapmanTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bliss_ChapmanTests.swift; sourceTree = "<group>"; };
+		A5096CB91AE1E2500093CF1E /* PortfolioCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PortfolioCollectionViewController.swift; sourceTree = "<group>"; };
+		A5096CBB1AE1E2800093CF1E /* ProjectsPage.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProjectsPage.xib; sourceTree = "<group>"; };
+		A5096CBD1AE1E3D20093CF1E /* ProjectsPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectsPage.swift; sourceTree = "<group>"; };
+		A52355EC1AE82C2600FDE379 /* Gif.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gif.swift; sourceTree = "<group>"; };
+		A52355F21AE84F9E00FDE379 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		A52355F41AE8816200FDE379 /* Whos Your Valentine? - CocoaNuts Demo.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Whos Your Valentine? - CocoaNuts Demo.pdf"; sourceTree = "<group>"; };
+		A52355F61AE94FCC00FDE379 /* Bliss Chapman-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bliss Chapman-Bridging-Header.h"; sourceTree = "<group>"; };
+		A52355F71AE94FCD00FDE379 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		A52355F81AE94FCD00FDE379 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		A52355FB1AE9688100FDE379 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		A52355FF1AE97CD000FDE379 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		A52A30AC1AEBCA82008F9413 /* LifestyleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LifestyleViewController.swift; sourceTree = "<group>"; };
+		A52A30AE1AEBCC4F008F9413 /* CUBVideo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CUBVideo.swift; sourceTree = "<group>"; };
+		A52A30B01AEBCCF4008F9413 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		A52AF6FC1AED684E00E5980A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		A52AF6FE1AED687800E5980A /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		A52AF7021AED6E1500E5980A /* SliderView.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = SliderView.gif; sourceTree = "<group>"; };
+		A538ADCF1AE9849D001CBDAD /* EducationPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EducationPage.swift; sourceTree = "<group>"; };
+		A54499111AEC006700519CE8 /* CUBPromoVideo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = CUBPromoVideo.mp4; sourceTree = "<group>"; };
+		A569C13B1AEB01D300AFB006 /* MapPopoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MapPopoverViewController.swift; path = ../MapPopoverViewController.swift; sourceTree = "<group>"; };
+		A569C13C1AEB01D300AFB006 /* MapPopoverViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MapPopoverViewController.xib; path = ../MapPopoverViewController.xib; sourceTree = "<group>"; };
+		A569C1411AEB1A2A00AFB006 /* EducationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EducationViewController.swift; sourceTree = "<group>"; };
+		A584018F1AEC695000072575 /* FamilyWaving.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = FamilyWaving.gif; sourceTree = "<group>"; };
+		A5A0DDE31AE5BC2B000FE9D0 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		A5B7EEE71AEC034900A24741 /* ISYMVideoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ISYMVideoViewController.swift; sourceTree = "<group>"; };
+		A5B7EEE91AEC095000A24741 /* MusicSample.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = MusicSample.mov; sourceTree = "<group>"; };
+		A5B7EEEE1AEC2BA600A24741 /* ProfessionalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfessionalViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A5096C911AE1DE380093CF1E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A52AF6FF1AED687800E5980A /* SystemConfiguration.framework in Frameworks */,
+				A52AF6FD1AED684E00E5980A /* QuartzCore.framework in Frameworks */,
+				A52A30B11AEBCCF4008F9413 /* AVFoundation.framework in Frameworks */,
+				A52356001AE97CD000FDE379 /* MapKit.framework in Frameworks */,
+				A52355F31AE84F9E00FDE379 /* StoreKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5096CA61AE1DE380093CF1E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A5096C8B1AE1DE380093CF1E = {
+			isa = PBXGroup;
+			children = (
+				A5096C961AE1DE380093CF1E /* Bliss Chapman */,
+				A5096CAC1AE1DE380093CF1E /* Bliss ChapmanTests */,
+				A5096C951AE1DE380093CF1E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A5096C951AE1DE380093CF1E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A5096C941AE1DE380093CF1E /* Bliss Chapman.app */,
+				A5096CA91AE1DE380093CF1E /* Bliss ChapmanTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A5096C961AE1DE380093CF1E /* Bliss Chapman */ = {
+			isa = PBXGroup;
+			children = (
+				A5096C991AE1DE380093CF1E /* AppDelegate.swift */,
+				A5096C9D1AE1DE380093CF1E /* Main.storyboard */,
+				A5A0DDE31AE5BC2B000FE9D0 /* Model.swift */,
+				A5096C9B1AE1DE380093CF1E /* ViewController.swift */,
+				A5B7EEEE1AEC2BA600A24741 /* ProfessionalViewController.swift */,
+				A5096CB91AE1E2500093CF1E /* PortfolioCollectionViewController.swift */,
+				A52355FB1AE9688100FDE379 /* ProfileViewController.swift */,
+				A569C1411AEB1A2A00AFB006 /* EducationViewController.swift */,
+				A52A30AC1AEBCA82008F9413 /* LifestyleViewController.swift */,
+				A5096C971AE1DE380093CF1E /* Supporting Files */,
+			);
+			path = "Bliss Chapman";
+			sourceTree = "<group>";
+		};
+		A5096C971AE1DE380093CF1E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A52A30AE1AEBCC4F008F9413 /* CUBVideo.swift */,
+				A5B7EEE71AEC034900A24741 /* ISYMVideoViewController.swift */,
+				A5B7EEEB1AEC1FEE00A24741 /* Frameworks */,
+				A50A76481AE9E51F009A5E03 /* Resources */,
+				A52AF7001AED68A400E5980A /* Nibs */,
+				A52AF7011AED68CB00E5980A /* Other */,
+				A52355FA1AE94FE900FDE379 /* Reachability */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A5096CAC1AE1DE380093CF1E /* Bliss ChapmanTests */ = {
+			isa = PBXGroup;
+			children = (
+				A5096CAF1AE1DE380093CF1E /* Bliss_ChapmanTests.swift */,
+				A5096CAD1AE1DE380093CF1E /* Supporting Files */,
+			);
+			path = "Bliss ChapmanTests";
+			sourceTree = "<group>";
+		};
+		A5096CAD1AE1DE380093CF1E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A5096CAE1AE1DE380093CF1E /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A50A76481AE9E51F009A5E03 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A5096CA01AE1DE380093CF1E /* Images.xcassets */,
+				A54499111AEC006700519CE8 /* CUBPromoVideo.mp4 */,
+				A52AF7021AED6E1500E5980A /* SliderView.gif */,
+				A5B7EEE91AEC095000A24741 /* MusicSample.mov */,
+				A52355F41AE8816200FDE379 /* Whos Your Valentine? - CocoaNuts Demo.pdf */,
+				A584018F1AEC695000072575 /* FamilyWaving.gif */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		A52355FA1AE94FE900FDE379 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				A52355F81AE94FCD00FDE379 /* Reachability.m */,
+				A52355F71AE94FCD00FDE379 /* Reachability.h */,
+			);
+			name = Reachability;
+			sourceTree = "<group>";
+		};
+		A52AF7001AED68A400E5980A /* Nibs */ = {
+			isa = PBXGroup;
+			children = (
+				A569C13C1AEB01D300AFB006 /* MapPopoverViewController.xib */,
+				A569C13B1AEB01D300AFB006 /* MapPopoverViewController.swift */,
+				A538ADCF1AE9849D001CBDAD /* EducationPage.swift */,
+				A5096CBD1AE1E3D20093CF1E /* ProjectsPage.swift */,
+				A5096CBB1AE1E2800093CF1E /* ProjectsPage.xib */,
+			);
+			name = Nibs;
+			sourceTree = "<group>";
+		};
+		A52AF7011AED68CB00E5980A /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				A52355EC1AE82C2600FDE379 /* Gif.swift */,
+				A52355F61AE94FCC00FDE379 /* Bliss Chapman-Bridging-Header.h */,
+				A5096C981AE1DE380093CF1E /* Info.plist */,
+			);
+			name = Other;
+			sourceTree = "<group>";
+		};
+		A5B7EEEB1AEC1FEE00A24741 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A52AF6FE1AED687800E5980A /* SystemConfiguration.framework */,
+				A52AF6FC1AED684E00E5980A /* QuartzCore.framework */,
+				A52A30B01AEBCCF4008F9413 /* AVFoundation.framework */,
+				A52355FF1AE97CD000FDE379 /* MapKit.framework */,
+				A52355F21AE84F9E00FDE379 /* StoreKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A5096C931AE1DE380093CF1E /* Bliss Chapman */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5096CB31AE1DE380093CF1E /* Build configuration list for PBXNativeTarget "Bliss Chapman" */;
+			buildPhases = (
+				A5096C901AE1DE380093CF1E /* Sources */,
+				A5096C911AE1DE380093CF1E /* Frameworks */,
+				A5096C921AE1DE380093CF1E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Bliss Chapman";
+			productName = "Bliss Chapman";
+			productReference = A5096C941AE1DE380093CF1E /* Bliss Chapman.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A5096CA81AE1DE380093CF1E /* Bliss ChapmanTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5096CB61AE1DE380093CF1E /* Build configuration list for PBXNativeTarget "Bliss ChapmanTests" */;
+			buildPhases = (
+				A5096CA51AE1DE380093CF1E /* Sources */,
+				A5096CA61AE1DE380093CF1E /* Frameworks */,
+				A5096CA71AE1DE380093CF1E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A5096CAB1AE1DE380093CF1E /* PBXTargetDependency */,
+			);
+			name = "Bliss ChapmanTests";
+			productName = "Bliss ChapmanTests";
+			productReference = A5096CA91AE1DE380093CF1E /* Bliss ChapmanTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A5096C8C1AE1DE380093CF1E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Bliss Chapman";
+				TargetAttributes = {
+					A5096C931AE1DE380093CF1E = {
+						CreatedOnToolsVersion = 6.3;
+						DevelopmentTeam = V3N72D7MS5;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					A5096CA81AE1DE380093CF1E = {
+						CreatedOnToolsVersion = 6.3;
+						TestTargetID = A5096C931AE1DE380093CF1E;
+					};
+				};
+			};
+			buildConfigurationList = A5096C8F1AE1DE380093CF1E /* Build configuration list for PBXProject "Bliss Chapman" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A5096C8B1AE1DE380093CF1E;
+			productRefGroup = A5096C951AE1DE380093CF1E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A5096C931AE1DE380093CF1E /* Bliss Chapman */,
+				A5096CA81AE1DE380093CF1E /* Bliss ChapmanTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A5096C921AE1DE380093CF1E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A54499121AEC007800519CE8 /* CUBPromoVideo.mp4 in Resources */,
+				A5096C9F1AE1DE380093CF1E /* Main.storyboard in Resources */,
+				A52AF7031AED6E1500E5980A /* SliderView.gif in Resources */,
+				A5B7EEEA1AEC095000A24741 /* MusicSample.mov in Resources */,
+				A52355F51AE8816200FDE379 /* Whos Your Valentine? - CocoaNuts Demo.pdf in Resources */,
+				A58401901AEC695000072575 /* FamilyWaving.gif in Resources */,
+				A569C13E1AEB01D300AFB006 /* MapPopoverViewController.xib in Resources */,
+				A5096CA11AE1DE380093CF1E /* Images.xcassets in Resources */,
+				A5096CBC1AE1E2800093CF1E /* ProjectsPage.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5096CA71AE1DE380093CF1E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A5096C901AE1DE380093CF1E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5B7EEEF1AEC2BA600A24741 /* ProfessionalViewController.swift in Sources */,
+				A5B7EEE81AEC034900A24741 /* ISYMVideoViewController.swift in Sources */,
+				A52A30AD1AEBCA82008F9413 /* LifestyleViewController.swift in Sources */,
+				A538ADD01AE9849D001CBDAD /* EducationPage.swift in Sources */,
+				A569C1421AEB1A2A00AFB006 /* EducationViewController.swift in Sources */,
+				A5A0DDE41AE5BC2B000FE9D0 /* Model.swift in Sources */,
+				A52A30AF1AEBCC4F008F9413 /* CUBVideo.swift in Sources */,
+				A5096CBE1AE1E3D20093CF1E /* ProjectsPage.swift in Sources */,
+				A52355ED1AE82C2600FDE379 /* Gif.swift in Sources */,
+				A52355F91AE94FCD00FDE379 /* Reachability.m in Sources */,
+				A5096CBA1AE1E2500093CF1E /* PortfolioCollectionViewController.swift in Sources */,
+				A5096C9C1AE1DE380093CF1E /* ViewController.swift in Sources */,
+				A52355FC1AE9688100FDE379 /* ProfileViewController.swift in Sources */,
+				A5096C9A1AE1DE380093CF1E /* AppDelegate.swift in Sources */,
+				A569C13D1AEB01D300AFB006 /* MapPopoverViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5096CA51AE1DE380093CF1E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5096CB01AE1DE380093CF1E /* Bliss_ChapmanTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A5096CAB1AE1DE380093CF1E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5096C931AE1DE380093CF1E /* Bliss Chapman */;
+			targetProxy = A5096CAA1AE1DE380093CF1E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A5096C9D1AE1DE380093CF1E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A5096C9E1AE1DE380093CF1E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A5096CB11AE1DE380093CF1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A5096CB21AE1DE380093CF1E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A5096CB41AE1DE380093CF1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "Bliss Chapman/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Bliss Chapman/Bliss Chapman-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		A5096CB51AE1DE380093CF1E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "Bliss Chapman/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Bliss Chapman/Bliss Chapman-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Release;
+		};
+		A5096CB71AE1DE380093CF1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Bliss ChapmanTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bliss Chapman.app/Bliss Chapman";
+			};
+			name = Debug;
+		};
+		A5096CB81AE1DE380093CF1E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Bliss ChapmanTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bliss Chapman.app/Bliss Chapman";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A5096C8F1AE1DE380093CF1E /* Build configuration list for PBXProject "Bliss Chapman" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5096CB11AE1DE380093CF1E /* Debug */,
+				A5096CB21AE1DE380093CF1E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5096CB31AE1DE380093CF1E /* Build configuration list for PBXNativeTarget "Bliss Chapman" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5096CB41AE1DE380093CF1E /* Debug */,
+				A5096CB51AE1DE380093CF1E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5096CB61AE1DE380093CF1E /* Build configuration list for PBXNativeTarget "Bliss ChapmanTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5096CB71AE1DE380093CF1E /* Debug */,
+				A5096CB81AE1DE380093CF1E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A5096C8C1AE1DE380093CF1E /* Project object */;
+}
