@@ -57,7 +57,7 @@ class EducationViewController: UIViewController, UITableViewDelegate, UITableVie
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
-        var cell: EducationPage = tableView.dequeueReusableCellWithIdentifier(Constants.ReuseIdentifier) as! EducationPage!
+        let cell: EducationPage = tableView.dequeueReusableCellWithIdentifier(Constants.ReuseIdentifier) as! EducationPage!
         
         let page = myModel.EducationPages[indexPath.row] as EducationPageTemplate
         

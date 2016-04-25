@@ -76,7 +76,7 @@ class ViewController: UIViewController {
         profilePicture.transform = CGAffineTransformMakeTranslation(0, -profilePicture.bounds.size.height)
         view.addSubview(profilePicture)
         
-        let navigationBubbleOffset = self.view.frame.width
+        _ = self.view.frame.width
         professionalBubble.alpha = 0.0
         projectsBubble.alpha = 0.0
         educationBubble.alpha = 0.0
@@ -117,7 +117,7 @@ class ViewController: UIViewController {
         
         //switch tabs to the selected bubble
         if let bubbleChosen = sender.currentTitle {
-            if let tabBar = myTabBarController {
+            if myTabBarController != nil {
                 deselectAllBubbles()
                 stopWaveAnimation()
                 switch bubbleChosen {
@@ -198,7 +198,7 @@ class ViewController: UIViewController {
     //MARK: Wave Animation of Navigation Bubbles
     private func startWaveAnimation() {
         pulseBubbleCounter = 1
-        self.pulsingTimer = NSTimer.scheduledTimerWithTimeInterval(Controls.PulsingWaveTime, target: self, selector: "pulseNextBubbleInWave", userInfo: nil, repeats: true)
+        self.pulsingTimer = NSTimer.scheduledTimerWithTimeInterval(Controls.PulsingWaveTime, target: self, selector: #selector(ViewController.pulseNextBubbleInWave), userInfo: nil, repeats: true)
     }
     
     private func stopWaveAnimation() {
@@ -219,18 +219,18 @@ class ViewController: UIViewController {
     internal func pulseNextBubbleInWave() {
         switch pulseBubbleCounter {
         case 1:
-            self.bubble1PulsingTimer = NSTimer.scheduledTimerWithTimeInterval(Constants.TimeForCompletePulse, target: self, selector: "pulseProfessionalButton", userInfo: nil, repeats: true)
+            self.bubble1PulsingTimer = NSTimer.scheduledTimerWithTimeInterval(Constants.TimeForCompletePulse, target: self, selector: #selector(ViewController.pulseProfessionalButton), userInfo: nil, repeats: true)
         case 2:
-            self.bubble2PulsingTimer = NSTimer.scheduledTimerWithTimeInterval(Constants.TimeForCompletePulse, target: self, selector: "pulseProjectsBubble", userInfo: nil, repeats: true)
+            self.bubble2PulsingTimer = NSTimer.scheduledTimerWithTimeInterval(Constants.TimeForCompletePulse, target: self, selector: #selector(ViewController.pulseProjectsBubble), userInfo: nil, repeats: true)
         case 3:
-            self.bubble3PulsingTimer = NSTimer.scheduledTimerWithTimeInterval(Constants.TimeForCompletePulse, target: self, selector: "pulseProfileButton", userInfo: nil, repeats: true)
+            self.bubble3PulsingTimer = NSTimer.scheduledTimerWithTimeInterval(Constants.TimeForCompletePulse, target: self, selector: #selector(ViewController.pulseProfileButton), userInfo: nil, repeats: true)
         case 4:
-            self.bubble4PulsingTimer = NSTimer.scheduledTimerWithTimeInterval(Constants.TimeForCompletePulse, target: self, selector: "pulseEducationBubble", userInfo: nil, repeats: true)
+            self.bubble4PulsingTimer = NSTimer.scheduledTimerWithTimeInterval(Constants.TimeForCompletePulse, target: self, selector: #selector(ViewController.pulseEducationBubble), userInfo: nil, repeats: true)
         case 5:
-            self.bubble5PulsingTimer = NSTimer.scheduledTimerWithTimeInterval(Constants.TimeForCompletePulse, target: self, selector: "pulseLifestyleButton", userInfo: nil, repeats: true)
+            self.bubble5PulsingTimer = NSTimer.scheduledTimerWithTimeInterval(Constants.TimeForCompletePulse, target: self, selector: #selector(ViewController.pulseLifestyleButton), userInfo: nil, repeats: true)
         default: if let timer = pulsingTimer { timer.invalidate(); pulsingTimer = nil}
         }
-        pulseBubbleCounter++
+        pulseBubbleCounter += 1
     }
     
     internal func pulseProfessionalButton() {

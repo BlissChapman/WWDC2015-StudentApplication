@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "F91F0AE29BF82E842CC673ABF87047A3AB79C53D",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "E9F23E97A93D48F5223FF7DD17F68D6ED038B594" : 0,
+    "F91F0AE29BF82E842CC673ABF87047A3AB79C53D" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "95C7F3F8-AE0E-4941-853E-316E1BBD3188",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "E9F23E97A93D48F5223FF7DD17F68D6ED038B594" : "WWDC2015-Student-Application",
+    "F91F0AE29BF82E842CC673ABF87047A3AB79C53D" : "WWDC2015-StudentApplication\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Bliss Chapman",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Bliss Chapman.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Togira\/WWDC2015-Student-Application.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "E9F23E97A93D48F5223FF7DD17F68D6ED038B594"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Togira\/WWDC2015-StudentApplication.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "F91F0AE29BF82E842CC673ABF87047A3AB79C53D"
+    }
+  ]
+}

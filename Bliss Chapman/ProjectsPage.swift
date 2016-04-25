@@ -33,11 +33,11 @@ class ProjectsPage: UICollectionViewCell {
         self.contentView.addSubview(pdfView)
     }
     
-    required init(coder aDecoder: NSCoder) {
+    required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
     
     deinit {
-        println("deinit called")
+        print("deinit called")
     }
 }

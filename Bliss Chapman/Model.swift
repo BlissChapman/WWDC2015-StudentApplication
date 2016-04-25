@@ -103,7 +103,7 @@ class Model {
 // A navigation bubble class could also encapsulate all this behavior but I would prefer to leave it as an extension in case I want to use these functions on buttons in a future update or in other views.
 extension UIButton {
     func shake() {
-        var shakeAnimation = CABasicAnimation(keyPath: "position")
+        let shakeAnimation = CABasicAnimation(keyPath: "position")
         shakeAnimation.duration = 0.1
         shakeAnimation.repeatCount = 2
         shakeAnimation.autoreverses = true
@@ -112,11 +112,10 @@ extension UIButton {
         self.layer.addAnimation(shakeAnimation, forKey: "position")
     }
     
-    func pulseGently(#percent: CGFloat) {
+    func pulseGently(percent percent: CGFloat) {
         let scale = 1.0 - (percent/100)
         
-        UIView.animateWithDuration(Controls.PulsingWaveTime * 4, delay: 0.0, options: .AllowUserInteraction | .CurveEaseInOut |
-            .BeginFromCurrentState, animations: {
+        UIView.animateWithDuration(Controls.PulsingWaveTime * 4, delay: 0.0, options: [.AllowUserInteraction, .CurveEaseInOut, .BeginFromCurrentState], animations: {
                 self.transform = CGAffineTransformMakeScale(1/scale, 1/scale)
             }) { action in
                 UIView.animateWithDuration(0.9, delay: 0.0, options: .AllowUserInteraction, animations: {

@@ -80,20 +80,20 @@ class ProfileViewController: UIViewController, MKMapViewDelegate {
         
         mapView.setRegion(region, animated: true)
         
-        var wavingAnnotation = MKPointAnnotation()
+        let wavingAnnotation = MKPointAnnotation()
         wavingAnnotation.coordinate = CLLocationCoordinate2DMake(Constants.MyHouseLatitude, Constants.MyHouseLongitude)
         wavingAnnotation.title = "Hi!" //annotation needs a title for user interaction to be allowed
         self.mapView.addAnnotation(wavingAnnotation)
     }
     
-    func mapView(mapView: MKMapView!, viewForAnnotation annotation: MKAnnotation!) -> MKAnnotationView! {
+    func mapView(mapView: MKMapView, viewForAnnotation annotation: MKAnnotation) -> MKAnnotationView? {
         if annotation is MKUserLocation {
             return nil
         } else if annotation is MKPointAnnotation {
             
-            var annotationView = MKAnnotationView(annotation: annotation, reuseIdentifier: nil)
+            let annotationView = MKAnnotationView(annotation: annotation, reuseIdentifier: nil)
             annotationView.image = UIImage(named: "MapAnnotation")
-            annotationView.frame = CGRectMake(0, 0, annotationView.image.size.width/13, annotationView.image.size.height/13) //scale so image looks resonably sized relative to the map - 13 is an arbitrary amount
+            annotationView.frame = CGRectMake(0, 0, annotationView.image!.size.width/13, annotationView.image!.size.height/13) //scale so image looks resonably sized relative to the map - 13 is an arbitrary amount
             annotationView.canShowCallout = true
             
             return annotationView
@@ -101,19 +101,19 @@ class ProfileViewController: UIViewController, MKMapViewDelegate {
         return nil
     }
     
-    func mapView(mapView: MKMapView!, didSelectAnnotationView view: MKAnnotationView!) {
+    func mapView(mapView: MKMapView, didSelectAnnotationView view: MKAnnotationView) {
         mapView.deselectAnnotation(view.annotation, animated: true)
         
         //create popover view controller
-        var content = UIViewController(nibName: "MapPopoverViewController", bundle: NSBundle.mainBundle())
-        var popover = UIPopoverController(contentViewController: content)
+        let content = UIViewController(nibName: "MapPopoverViewController", bundle: NSBundle.mainBundle())
+        let popover = UIPopoverController(contentViewController: content)
         
         content.view.frame = CGRectMake(0, 0, 240, 140)
         popover.popoverContentSize = content.view.frame.size
-        popover.presentPopoverFromRect(view.bounds, inView: view, permittedArrowDirections: .Left | .Right, animated: true)
+        popover.presentPopoverFromRect(view.bounds, inView: view, permittedArrowDirections: [.Left, .Right], animated: true)
         
         //create image view that will hold my gif
-        var imageView = UIImageView(frame: content.view.frame)
+        let imageView = UIImageView(frame: content.view.frame)
         imageView.frame.size.height = imageView.frame.size.height * 2.8/4
         imageView.frame.size.width = content.view.frame.width
         imageView.transform = CGAffineTransformMakeTranslation(0, imageView.frame.height / 2.4)
@@ -125,7 +125,7 @@ class ProfileViewController: UIViewController, MKMapViewDelegate {
         
         //asynchronously load gif so that the popover can appear without having to load up the entire gif first
         var gif: UIImage?
-        let qos = Int(QOS_CLASS_USER_INITIATED.value)
+        let qos = Int(QOS_CLASS_USER_INITIATED.rawValue)
         dispatch_async(dispatch_get_global_queue(qos, 0), { () -> Void in
             if let url = NSBundle.mainBundle().URLForResource("FamilyWaving", withExtension: "gif") {
                 if let gifData = NSData(contentsOfURL: url) {
@@ -134,7 +134,7 @@ class ProfileViewController: UIViewController, MKMapViewDelegate {
                     }
                 }
                 dispatch_async(dispatch_get_main_queue(), {
-                    if let createdGif = gif {
+                    if gif != nil {
                         imageView.image = gif
                     }
                 })
@@ -143,13 +143,13 @@ class ProfileViewController: UIViewController, MKMapViewDelegate {
     }
     
     //error handling if map could not load
-    func mapViewDidFailLoadingMap(mapView: MKMapView!, withError error: NSError!) {
+    func mapViewDidFailLoadingMap(mapView: MKMapView, withError error: NSError) {
         // Map failed -> check internet connectivity and issue alerts depending on if that was the issue
         
-        var internetStatus = Reachability.reachabilityForInternetConnection().currentReachabilityStatus()
+        let internetStatus = Reachability.reachabilityForInternetConnection().currentReachabilityStatus()
         
-        if internetStatus.value == 0 {
-            var noInternetAlert = UIAlertController(title: "No Internet Connection.", message: "Please connect to a wifi or cellular network.", preferredStyle: .Alert)
+        if internetStatus.rawValue == 0 {
+            let noInternetAlert = UIAlertController(title: "No Internet Connection.", message: "Please connect to a wifi or cellular network.", preferredStyle: .Alert)
             noInternetAlert.addAction(UIAlertAction(title: "Dismiss", style: .Cancel, handler: { action in
                 self.dismissViewControllerAnimated(true, completion: nil)
             }))
@@ -160,7 +160,7 @@ class ProfileViewController: UIViewController, MKMapViewDelegate {
             }))
             self.presentViewController(noInternetAlert, animated: true, completion: nil)
         } else {
-            var unknownErrorAlert = UIAlertController(title: "Error Loading Map", message: error.description, preferredStyle: .Alert)
+            let unknownErrorAlert = UIAlertController(title: "Error Loading Map", message: error.description, preferredStyle: .Alert)
             unknownErrorAlert.addAction(UIAlertAction(title: "Dismiss", style: .Cancel, handler: { action in
                 self.dismissViewControllerAnimated(true, completion: nil)
             }))
